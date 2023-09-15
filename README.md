@@ -7,8 +7,11 @@ Ele automatiza a criação de certificados JSK
 ``` shell script
 apt update -y;
 apt upgrade -y;
+```
+#### Wget e Git
+```
 apt install wget -y;
-apt install git;
+apt install git -y;
 ```
 #### KeyGen
 
