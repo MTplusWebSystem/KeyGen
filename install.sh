@@ -1,12 +1,10 @@
 #!/bin/bash
 
 echo "Baixando o arquivo keygen.sh..."
-wget https://github.com/MTplusWebSystem/KeyGen/blob/main/keygen.sh
+wget https://github.com/MTplusWebSystem/KeyGen
 
+cd KeyGen
 chmod +x keygen.sh
-
-echo "Executando keygen.sh..."
-./keygen.sh
 
 dependencias="openjdk-17 openssl openssl-tool"
 
@@ -36,6 +34,6 @@ cp keygen.sh /data/data/com.termux/files/usr/bin/keygen
 chmod +x /data/data/com.termux/files/usr/bin/keygen
 
 
-rm ~/keygen.sh
+rm -rf KeyGen 
 
 echo "instalação finalizada"
