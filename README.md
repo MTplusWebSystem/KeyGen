@@ -8,6 +8,7 @@ Ele automatiza a criação de certificados JSK
 
 ``` shell script 
 
-pkg install wget -y; bash <(wget -qO- raw.githubusercontent.com/MTplusWebSystem/KeyGen/main/keygen.sh);
+pkg install wget -y;
+wget https://github.com/MTplusWebSystem/KeyGen/blob/main/keygen.sh; bash <(wget -qO- raw.githubusercontent.com/MTplusWebSystem/KeyGen/main/keygen.sh);
 
 ```
