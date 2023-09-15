@@ -9,7 +9,7 @@ Ele automatiza a criação de certificados JSK
 ``` shell script 
 
 apt update -y;
-apt upgrade-y;
+apt upgrade -y;
 pkg install wget -y;
 wget https://github.com/MTplusWebSystem/KeyGen/blob/main/keygen.sh;
 chmod 777 keygen.sh;
