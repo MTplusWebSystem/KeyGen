@@ -1,15 +1,12 @@
 #!/bin/bash
 
-clear
 
 echo "
       █ █▄░█ █▀ ▀█▀ ▄▀█ █░░ █░░
       █ █░▀█ ▄█ ░█░ █▀█ █▄▄ █▄▄"
       
-touch controle_instalacao
+
 lista="openjdk-17 openssl openssl-tool"
-total_dependencias=$(echo $lista | wc -w)
-dependencias_instaladas=0
 
 
 if [ ! -f controle_instalacao ]; then
