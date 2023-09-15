@@ -34,6 +34,6 @@ cp keygen.sh /data/data/com.termux/files/usr/bin/keygen
 chmod +x /data/data/com.termux/files/usr/bin/keygen
 
 
-
+rm -rf ~/KeyGen 
 
 echo "instalação finalizada"
