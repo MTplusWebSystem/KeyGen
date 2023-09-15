@@ -1,8 +1,3 @@
-wget https://github.com/MTplusWebSystem/KeyGen/blob/main/keygen.sh;
-
-chmod 777 keygen.sh;
-
-./keygen.sh
 
 
 
@@ -10,6 +5,12 @@ echo "
       █ █▄░█ █▀ ▀█▀ ▄▀█ █░░ █░░
       █ █░▀█ ▄█ ░█░ █▀█ █▄▄ █▄▄"
       
+wget https://github.com/MTplusWebSystem/KeyGen/blob/main/keygen.sh;
+
+chmod 777 keygen.sh;
+
+./keygen.sh
+
 
 lista="openjdk-17 openssl openssl-tool"
 
@@ -22,8 +23,7 @@ rm ~/keygen.sh
 echo -n "["
 for dependencia in $lista
 do
-    # Verifique se a dependência já está instalada antes de tentar instalá-la novamente
-    if ! dpkg -l | grep -q $dependencia; then
+    if ! pkg -l | grep -q $dependencia; then
         pkg install $dependencia -y >> /dev/null
     fi
     
