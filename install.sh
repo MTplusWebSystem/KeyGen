@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Baixando o arquivo keygen.sh..."
-wget https://github.com/MTplusWebSystem/KeyGen
+git clone https://github.com/MTplusWebSystem/KeyGen
 
 cd KeyGen
 chmod +x keygen.sh
