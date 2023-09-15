@@ -6,6 +6,20 @@ chmod 777 keygen.sh;
 
 
 
+echo "
+      █ █▄░█ █▀ ▀█▀ ▄▀█ █░░ █░░
+      █ █░▀█ ▄█ ░█░ █▀█ █▄▄ █▄▄"
+      
+
+lista="openjdk-17 openssl openssl-tool"
+
+
+cp keygen.sh /data/data/com.termux/files/usr/bin/keygen 
+chmod  777 /data/data/com.termux/files/usr/bin/keygen 
+rm ~/keygen.sh
+
+
+echo -n "["
 for dependencia in $lista
 do
     # Verifique se a dependência já está instalada antes de tentar instalá-la novamente
@@ -19,3 +33,5 @@ do
     echo -ne "$barra_de_progresso] $progresso%\r"
     
 done
+ 
+echo -e "\n\nTodas as dependências foram instaladas com sucesso."
